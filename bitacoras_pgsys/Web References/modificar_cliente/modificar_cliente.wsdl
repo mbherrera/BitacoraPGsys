@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="urn:ws_mysqlBitacora" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="urn:ws_mysqlBitacora" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="urn:ws_mysqlBitacora">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+      <xsd:complexType name="datos_cliente_entrada">
+        <xsd:all>
+          <xsd:element name="cod_datos" type="xsd:string" />
+          <xsd:element name="empresa_datos" type="xsd:string" />
+          <xsd:element name="titulo_datos" type="xsd:string" />
+          <xsd:element name="descripcion_datos" type="xsd:string" />
+          <xsd:element name="ultmod_datos" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+      <xsd:complexType name="datos_cliente_salida">
+        <xsd:all>
+          <xsd:element name="codigo" type="xsd:string" />
+          <xsd:element name="respuesta" type="xsd:string" />
+        </xsd:all>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="modificar_clienteRequest">
+    <wsdl:part name="datos_cliente_entrada" type="tns:datos_cliente_entrada" />
+  </wsdl:message>
+  <wsdl:message name="modificar_clienteResponse">
+    <wsdl:part name="return" type="tns:datos_cliente_salida" />
+  </wsdl:message>
+  <wsdl:portType name="modificar_clientePortType">
+    <wsdl:operation name="modificar_cliente">
+      <documentation>Funcion para modificar un cliente.</documentation>
+      <wsdl:input message="tns:modificar_clienteRequest" />
+      <wsdl:output message="tns:modificar_clienteResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="modificar_clienteBinding" type="tns:modificar_clientePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="modificar_cliente">
+      <soap:operation soapAction="urn:pgsyswsdl#modificar_cliente" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="urn:ws_mysqlBitacora" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="urn:ws_mysqlBitacora" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="modificar_cliente">
+    <wsdl:port name="modificar_clientePort" binding="tns:modificar_clienteBinding">
+      <soap:address location="http://www.pgsys.cl/serverwsBitacora/modificar_cliente.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

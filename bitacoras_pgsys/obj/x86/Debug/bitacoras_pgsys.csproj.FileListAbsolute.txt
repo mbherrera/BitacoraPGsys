@@ -1,0 +1,12 @@
+E:\Visual Studio 2010\Projects\bitacoras_pgsys\bitacoras_pgsys\bin\Debug\bitacoras_pgsys.exe.config
+E:\Visual Studio 2010\Projects\bitacoras_pgsys\bitacoras_pgsys\bin\Debug\bitacoras_pgsys.exe
+E:\Visual Studio 2010\Projects\bitacoras_pgsys\bitacoras_pgsys\bin\Debug\bitacoras_pgsys.pdb
+E:\Visual Studio 2010\Projects\bitacoras_pgsys\bitacoras_pgsys\bin\Debug\funciones_generales.dll
+E:\Visual Studio 2010\Projects\bitacoras_pgsys\bitacoras_pgsys\bin\Debug\funciones_generales.pdb
+E:\Visual Studio 2010\Projects\bitacoras_pgsys\bitacoras_pgsys\obj\x86\Debug\bitacoras_pgsys.Form1.resources
+E:\Visual Studio 2010\Projects\bitacoras_pgsys\bitacoras_pgsys\obj\x86\Debug\bitacoras_pgsys.modificar_bitacora.resources
+E:\Visual Studio 2010\Projects\bitacoras_pgsys\bitacoras_pgsys\obj\x86\Debug\bitacoras_pgsys.nueva_bitacora.resources
+E:\Visual Studio 2010\Projects\bitacoras_pgsys\bitacoras_pgsys\obj\x86\Debug\bitacoras_pgsys.Properties.Resources.resources
+E:\Visual Studio 2010\Projects\bitacoras_pgsys\bitacoras_pgsys\obj\x86\Debug\bitacoras_pgsys.csproj.GenerateResource.Cache
+E:\Visual Studio 2010\Projects\bitacoras_pgsys\bitacoras_pgsys\obj\x86\Debug\bitacoras_pgsys.exe
+E:\Visual Studio 2010\Projects\bitacoras_pgsys\bitacoras_pgsys\obj\x86\Debug\bitacoras_pgsys.pdb

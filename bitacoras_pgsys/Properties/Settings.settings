@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="bitacoras_pgsys.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="bitacoras_pgsys_lista_clientes_lista_clientes" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.pgsys.cl/serverwsBitacora/lista_clientes.php</Value>
+    </Setting>
+    <Setting Name="bitacoras_pgsys_eliminar_cliente_eliminar_cliente" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.pgsys.cl/serverwsBitacora/eliminar_cliente.php</Value>
+    </Setting>
+    <Setting Name="bitacoras_pgsys_crear_cliente_crear_cliente" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.pgsys.cl/serverwsBitacora/crear_cliente.php</Value>
+    </Setting>
+    <Setting Name="bitacoras_pgsys_modificar_cliente_modificar_cliente" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.pgsys.cl/serverwsBitacora/modificar_cliente.php</Value>
+    </Setting>
+    <Setting Name="bitacoras_pgsys_detalle_cliente_detalle_cliente" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://www.pgsys.cl/serverwsBitacora/detalle_cliente.php</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
